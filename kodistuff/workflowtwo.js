@@ -1,0 +1,1 @@
+document.querySelector(".headingtwo").innerHTML += HeadingTwoUI();
