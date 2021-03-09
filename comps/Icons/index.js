@@ -206,20 +206,56 @@ function Rubbish2 (){
     </div> `
 }
 
-export const Trash = TrashBags1 ();
 
-export const GarbageFire = GarbageFire1 ();
+TrashBags1.HandleClick = (el) => {
+   el.style.opacity = 0;
+}
 
-export const Bio = Biohazard ();
+GarbageFire1.HandleClick = (el) => {
+    el.style.opacity = 0;
+ }
 
-export const Dumpy = Dump ();
 
-export const Fish = FishBone ();
+Biohazard.HandleClick = (el) => {
+    el.style.opacity = 0;
+ }
 
-export const Garbages1 = Garbage1 ();
 
-export const Garbages2 = Garbage2 ();
+Dump.HandleClick = (el) => {
+    el.style.opacity = 0;
+ }
 
-export const Rubbishes1 = Rubbish1 ();
 
-export const Rubbishes2 = Rubbish2 ();
+FishBone.HandleClick = (el) => {
+    el.style.opacity = 0;
+ }
+
+Garbage1.HandleClick = (el) => {
+    el.style.opacity = 0;
+ }
+
+ Garbage2.HandleClick = (el) => {
+    el.style.opacity = 0;
+ }
+
+Rubbish1.HandleClick = (el) => {
+    el.style.opacity = 0;
+ }
+
+ Rubbish2.HandleClick = (el) => {
+    el.style.opacity = 0;
+ }
+
+
+
+//export const CryFace = Cry();
+
+//export const Arrow1 = BigArrow1 ();
+
+//export const Arrow2 = SmallArrow1 ();
+
+//export const Trash = TrashBags1 ();
+
+//export const GarbageFire = GarbageFire1 ();
+
+//export const DeathSymbol = Death ();

@@ -27,6 +27,18 @@ function ButtonUI (text='Next Question!'){
 }
 
 
+function Choose (){
+    return ` <div style='
+    max-width: 293px;
+    max-height: 293px;
+    display:inline-flex;
+    align-items:center;
+    '>
+    
+    <img src="https://placekitten.com/50/50"/>
+    
+    </div> `
+}
 
 
 
@@ -35,8 +47,10 @@ function UK (text='X'){
     max-width: 169px;
     max-height: 250px;
     border-radius:25px;
+    transition:opacity 1s;
     margin-left:120px;
     '
+    onclick='UK.HandleClick(this)'
     
     >
 <img src="Component_Pictures_copy/United_Kingdom_Flag.png" style='
@@ -54,6 +68,8 @@ font-family: Montserrat;
     line-height: 27px;
     text-align: center;
     color: red;
+opacity:0;
+transition:opacity 0.5s;
 '>${text}</div>
     
     </div> `
@@ -64,8 +80,10 @@ function CHI (text='X'){
     max-width: 169px;
     max-height: 250px;
     border-radius:25px;
+    transition:opacity 1s;
     margin-left:120px;
     '
+    onclick='UK.HandleClick(this)'
     
     >
     <img src="Component_Pictures_copy/China_Flag.png" style='
@@ -82,6 +100,8 @@ font-family: Montserrat;
     line-height: 27px;
     text-align: center;
     color: red;
+opacity:0;
+transition:opacity 0.5s;
 '>${text}</div>
     
     </div> `
@@ -91,8 +111,10 @@ function USA (text='X'){
     max-width: 169px;
     max-height: 250px;
     border-radius:25px;
+    transition:opacity 1s;
     margin-left:120px;
     '
+    onclick='USA.HandleClick(this)'
     
     >
     <img src="Component_Pictures_copy/United_States_Flag.png" style='
@@ -110,6 +132,8 @@ function USA (text='X'){
         line-height: 27px;
         text-align: center;
         color: red;
+    opacity:0;
+    transition:opacity 0.5s;
     '>${text}</div>
 
     </div> `
@@ -120,6 +144,7 @@ function CAN (text='Correct Answer! In Canada, the open burning of garbage produ
     max-width: 169px;
     max-height: 500px;
     border-radius:25px;
+    transition:opacity 0.5s;
     margin-left:120px;
     '
     onclick='CAN.HandleClick(this)'
@@ -139,6 +164,8 @@ function CAN (text='Correct Answer! In Canada, the open burning of garbage produ
         line-height: 27px;
         text-align: center;
         color: #94FF40;
+    opacity:0;
+    transition:opacity 1s;
     '>${text}</div>
 
     </div> 
@@ -173,17 +200,33 @@ function CAN (text='Correct Answer! In Canada, the open burning of garbage produ
 
 
 
+CAN.HandleClick = (el) => {
+    el.querySelector(".text").style.opacity = 1;
+    }
+
+UK.HandleClick = (el) => {
+    el.querySelector(".text").style.opacity = 1;
+    }
 
 
+CHI.HandleClick = (el) => {
+    el.querySelector(".text").style.opacity = 1;
+    }
 
-export const Button = ButtonUI();
+
+USA.HandleClick = (el) => {
+    el.querySelector(".text").style.opacity = 1;
+    }
 
 
+//export const Button = ButtonUI();
 
-export const UK1 = UK();
+//export const PickQuestion = Choose();
 
-export const CHI1 = CHI();
+//export const CAN1 = CAN();
 
-export const USA1 = USA();
+//export const UK1 = UK();
 
-export const CAN1 = CAN();
+//export const CHI1 = CHI();
+
+//export const USA1 = USA();

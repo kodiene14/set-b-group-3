@@ -13,6 +13,7 @@ function H2 (text='Click for Question', bgcolor='#ffffff', ){
     text-decoration:underline;
     '
     
+    onclick='H2.HandleClick(this)'
 
     >
     
@@ -28,6 +29,8 @@ function H2 (text='Click for Question', bgcolor='#ffffff', ){
         text-align: center;
         color: #F8F3EB;
         text-decoration:none;
+    opacity:0;
+    transition:opacity 1s;
     '>Which Country produces more dioxins and furans than all industrial activities combined?
     </div>`
 }
@@ -81,12 +84,15 @@ function Para (){
     activities combined? </p>`
 }
 
+H2.HandleClick = (el) => {
+    el.querySelector(".text").style.opacity = 1;
+}
 
 
-export const header2 = H2();
+//export const header2 = H2();
 
-export const header1 = H1();
+//export const header1 = H1();
 
-export const KnowledgeCheck = Title();
+//export const KnowledgeCheck = Title();
 
-export const Paragraph1 = Para();
+//export const Paragraph1 = Para();
