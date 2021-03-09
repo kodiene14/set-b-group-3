@@ -1,0 +1,30 @@
+html,body{
+    margin:0px;
+    background-image:linear-gradient(#B5CF94, #E39A9A);
+}
+
+#main{
+    width:100vw;
+    height:315vh;
+    display:flex;
+    background-image:linear-gradient(#B5CF94, #E39A9A);
+}
+
+
+.mid{
+    flex-basis: 300px;
+
+}
+
+.right{
+    flex-basis: 412px;
+    
+}
+
+.left{
+    flex-basis: 412px;
+    background-image:linear-gradient(#B5CF94, #E39A9A);
+    align-items: center;
+    justify-content: center;
+}
+

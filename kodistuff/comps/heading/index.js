@@ -7,7 +7,7 @@ function HeadingUI(){
         left: 70px;
         top: 19px;
         
-        font-family: Roboto, sans-serif;
+        font-family: Futura;
         color: #F8F3EB;
         font-style: normal;
         font-weight: normal;
